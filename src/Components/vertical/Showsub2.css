@@ -1,0 +1,25 @@
+.none {
+  display: none;
+}
+
+.drop_down_cont_media {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  line-height: 28px;
+  list-style: none;
+  text-align: left;
+  text-decoration: none;
+  color: #ff635e;
+}
+
+.drop_down_cont_media li {
+  margin-top: 8px;
+}
+
+.drop_down_cont_media li a {
+  transition: 0.5s;
+}
+
+.drop_down_cont_media li a:hover {
+  margin-left: 5px;
+}

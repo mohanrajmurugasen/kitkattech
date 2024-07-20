@@ -1,0 +1,39 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: black; */
+  background: linear-gradient(to bottom, #535e69, #044c4f);
+}
+
+.loader {
+  text-align: center;
+}
+
+.loader .name {
+  font-size: 20px;
+  color: white;
+  animation: fadeDown 1s ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  line-height: 1.5;
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.preloader img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}

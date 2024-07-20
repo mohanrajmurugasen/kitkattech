@@ -1,0 +1,158 @@
+.carrear_image {
+  position: relative;
+}
+.career_img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+.career_flex {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.career_flex_img {
+  width: 24%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+.career_page_cont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  text-indent: 30px;
+  text-align: justify;
+}
+.carrear_table_cont {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.carrear_flex {
+  width: 80%;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.liststyle a {
+  text-decoration: none;
+  color: #ff635e;
+}
+.content_lists {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+}
+
+.cont_para_style {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Roboto", serif;
+  font-size: 21px;
+  text-indent: 70px;
+  text-align: justify;
+}
+.career_page_cont {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  text-indent: 30px;
+  text-align: justify;
+}
+.resumecontainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.resumecontainer h1 {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.resumecontainer form {
+  width: 80%;
+  margin: auto;
+}
+.resumecontainer input {
+  border: 2px solid #ff635e;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  height: 40px;
+}
+.resumecontainer .upload {
+  background-color: #ff635e;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .carrear_img {
+    height: 250px;
+  }
+  .carrear_img .sli_img1 {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    width: 450px;
+  }
+  .resumecontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .resumecontainer form {
+    /* width: 80%; */
+    padding-left: 5px;
+    margin-left: 20px;
+  }
+  .resumecontainer input {
+    border: 2px solid #ff635e;
+    margin-bottom: 20px;
+    border-radius: 2px;
+  }
+  .resumecontainer .upload {
+    background-color: #ff635e;
+    color: white;
+  }
+}
+
+.fileUploading {
+  max-width: 400px;
+}
+
+.fileUploading input {
+  width: 100%;
+  padding: 5px;
+}
+
+.carrear_table .quick_links .heading {
+  font-size: 20px;
+  font-weight: 600;
+}
