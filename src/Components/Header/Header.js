@@ -116,7 +116,7 @@ const HeaderPage = () => {
                  </div> */}
           </div>
           <div className="nav_content_list">
-            <Link to="/AboutPage" className="list_ref">
+            <Link to="/TrainingPage" className="list_ref">
               TRAINING
             </Link>
           </div>

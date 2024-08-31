@@ -1,6 +1,6 @@
 import React from "react";
-import {Routes,Route} from "react-router-dom";
-import  Home  from "../Pages/Home/Home";
+import { Routes, Route } from "react-router-dom";
+import Home from "../Pages/Home/Home";
 import AboutPage from "../Pages/About/About";
 import CareersPage from "../Pages/Careers/Careers";
 import ContactPage from "../Pages/Contacts/Contacts";
@@ -21,52 +21,55 @@ import BulksmsPage from "../Pages/Services/Bulksms";
 import CRMPage from "../Pages/Services/Crm";
 import ERPPage from "../Pages/Services/Erp";
 import HRMPage from "../Pages/Services/Hrm";
+import TrainingPage from "../TrainingPage/TrainingPage";
 
+const MainLink = () => {
+  return (
+    <Routes>
+      {/* navbar link */}
+      <Route path="/Home" exact element={<Home />}></Route>
+      <Route path="/" exact element={<Home />}></Route>
+      <Route path="/AboutPage" exact element={<AboutPage />}></Route>
+      <Route path="/ProductPage" exact element={<Home />}></Route>
+      <Route path="/ServicePage" exact element={<Home />}></Route>
+      <Route path="/CareerPage" exact element={<CareersPage />}></Route>
+      <Route path="/TrainingPage" exact element={<TrainingPage />}></Route>
+      <Route path="/ContactPage" exact element={<ContactPage />}></Route>
 
+      {/* product drop down link */}
 
+      <Route path="/BiometricPage" exact element={<BiometricPage />}></Route>
+      <Route path="/E-CommercePage" exact element={<EcommercePage />}></Route>
+      <Route path="/OfficeERPPage" exact element={<OfficeERPPage />}></Route>
+      <Route path="/MiniBankingPage" exact element={<MinibankPage />}></Route>
+      <Route path="/TravelERPPage" exact element={<TravelPage />}></Route>
+      <Route path="/POSPage" exact element={<PosPage />}></Route>
+      <Route path="/GoldLoanPage" exact element={<GoldPage />}></Route>
+      <Route path="/MedicalPage" exact element={<MedicalPage />}></Route>
 
-
-const MainLink = ()=>{
-    return(
-        <Routes>
-
-            {/* navbar link */}
-            <Route path="/Home" exact element={<Home/>}></Route>
-            <Route path="/" exact element={<Home/>}></Route>
-            <Route path="/AboutPage" exact element={<AboutPage/>}></Route>
-            <Route path="/ProductPage" exact element={<Home/>}></Route>
-            <Route path="/ServicePage" exact element={<Home/>}></Route>
-            <Route path="/CareerPage" exact element={<CareersPage/>}></Route>
-            <Route path="/ContactPage" exact element={<ContactPage/>}></Route>
-
-             {/* product drop down link */}
-
-            <Route path="/BiometricPage" exact element={<BiometricPage/>}></Route>
-            <Route path="/E-CommercePage" exact element={<EcommercePage/>}></Route>
-            <Route path="/OfficeERPPage" exact element={<OfficeERPPage/>}></Route>
-            <Route path="/MiniBankingPage" exact element={<MinibankPage/>}></Route>
-            <Route path="/TravelERPPage" exact element={<TravelPage/>}></Route>
-            <Route path="/POSPage" exact element={<PosPage/>}></Route>
-            <Route path="/GoldLoanPage" exact element={<GoldPage/>}></Route>
-            <Route path="/MedicalPage" exact element={<MedicalPage/>}></Route>
-           
-           
-            {/* service dropdown */}
-            <Route path="/CustomizedWebPage" exact element={<CustomizedPage/>}></Route>
-            <Route path="/WebsiteDesignPage" exact element={<WebdesignPage/>}></Route>
-            <Route path="/WebHostingPage" exact element={<WebhostPage/>}></Route>
-            <Route path="/AndroidApplicationPage" exact element={<AndroidPage/>}></Route>
-            <Route path="/IOSApplicationPage" exact element={<IOSPage/>}></Route>
-            <Route path="/BulkSMSPage" exact element={<BulksmsPage/>}></Route>
-            <Route path="/CRMPage" exact element={<CRMPage/>}></Route>
-            <Route path="/ERPPage" exact element={<ERPPage/>}></Route>
-            <Route path="/HRMPage" exact element={<HRMPage/>}></Route>
-           
-          
-
-
-            
-        </Routes>
-    )
-}
+      {/* service dropdown */}
+      <Route
+        path="/CustomizedWebPage"
+        exact
+        element={<CustomizedPage />}
+      ></Route>
+      <Route
+        path="/WebsiteDesignPage"
+        exact
+        element={<WebdesignPage />}
+      ></Route>
+      <Route path="/WebHostingPage" exact element={<WebhostPage />}></Route>
+      <Route
+        path="/AndroidApplicationPage"
+        exact
+        element={<AndroidPage />}
+      ></Route>
+      <Route path="/IOSApplicationPage" exact element={<IOSPage />}></Route>
+      <Route path="/BulkSMSPage" exact element={<BulksmsPage />}></Route>
+      <Route path="/CRMPage" exact element={<CRMPage />}></Route>
+      <Route path="/ERPPage" exact element={<ERPPage />}></Route>
+      <Route path="/HRMPage" exact element={<HRMPage />}></Route>
+    </Routes>
+  );
+};
 export default MainLink;

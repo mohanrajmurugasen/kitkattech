@@ -86,7 +86,7 @@ const Nav = ({ isOpen, setIsOpen, shownav, onClose }) => {
         </div>
 
         <div className="nav_content_list_media">
-          <Link to="/AboutPage" className="list_ref_media" onClick={onClose}>
+          <Link to="/TRAINING" className="list_ref_media" onClick={onClose}>
             Training
           </Link>
         </div>
