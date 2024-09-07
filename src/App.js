@@ -17,7 +17,6 @@ function App() {
     }, 2000);
   }, []);
 
-  console.log(isLoading);
   return (
     <>
       <BrowserRouter>

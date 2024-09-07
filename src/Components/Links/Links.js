@@ -22,6 +22,27 @@ import CRMPage from "../Pages/Services/Crm";
 import ERPPage from "../Pages/Services/Erp";
 import HRMPage from "../Pages/Services/Hrm";
 import TrainingPage from "../TrainingPage/TrainingPage";
+import AndroidComponent from "../Training/android";
+import AngularComponent from "../Training/angular";
+import BigdataComponent from "../Training/Bigdata";
+import CorejavaComponent from "../Training/corejava";
+import DatascienceComponent from "../Training/datascience";
+import DevopsComponent from "../Training/Devops";
+import DigitalComponent from "../Training/digital";
+import FlutterComponent from "../Training/flutter";
+import FullStackComponent from "../Training/fullstack";
+import Iostraining from "../Training/Ios";
+import MachinelearningComponent from "../Training/machine_learning";
+import MeanstackComponent from "../Training/meanstack";
+import MernstackComponent from "../Training/mernstack";
+import MongodbComponent from "../Training/mongodb";
+import NodeJsComponent from "../Training/nodejs";
+import PhpComponent from "../Training/php";
+import PythonComponent from "../Training/python";
+import ReactComponent from "../Training/react";
+import ReactnativeComponent from "../Training/Reactnatives";
+import SoftwaretestComponent from "../Training/softwaretest";
+import WebdesignComponent from "../Training/webdesign";
 
 const MainLink = () => {
   return (
@@ -69,6 +90,45 @@ const MainLink = () => {
       <Route path="/CRMPage" exact element={<CRMPage />}></Route>
       <Route path="/ERPPage" exact element={<ERPPage />}></Route>
       <Route path="/HRMPage" exact element={<HRMPage />}></Route>
+
+      {/* Training */}
+      <Route path="/Android" exact element={<AndroidComponent />}></Route>
+      <Route path="/Angular" exact element={<AngularComponent />}></Route>
+      <Route path="/Bigdata" exact element={<BigdataComponent />}></Route>
+      <Route path="/Corejava" exact element={<CorejavaComponent />}></Route>
+      <Route
+        path="/Datascience"
+        exact
+        element={<DatascienceComponent />}
+      ></Route>
+      <Route path="/Devops" exact element={<DevopsComponent />}></Route>
+      <Route path="/Digital" exact element={<DigitalComponent />}></Route>
+      <Route path="/Flutter" exact element={<FlutterComponent />}></Route>
+      <Route path="/FullStack" exact element={<FullStackComponent />}></Route>
+      <Route path="/Iostraining" exact element={<Iostraining />}></Route>
+      <Route
+        path="/Machinelearning"
+        exact
+        element={<MachinelearningComponent />}
+      ></Route>
+      <Route path="/Meanstack" exact element={<MeanstackComponent />}></Route>
+      <Route path="/Mernstack" exact element={<MernstackComponent />}></Route>
+      <Route path="/Mongodb" exact element={<MongodbComponent />}></Route>
+      <Route path="/NodeJs" exact element={<NodeJsComponent />}></Route>
+      <Route path="/Php" exact element={<PhpComponent />}></Route>
+      <Route path="/Python" exact element={<PythonComponent />}></Route>
+      <Route path="/React" exact element={<ReactComponent />}></Route>
+      <Route
+        path="/Reactnative"
+        exact
+        element={<ReactnativeComponent />}
+      ></Route>
+      <Route
+        path="/Softwaretest"
+        exact
+        element={<SoftwaretestComponent />}
+      ></Route>
+      <Route path="/Webdesign" exact element={<WebdesignComponent />}></Route>
     </Routes>
   );
 };

@@ -5,10 +5,12 @@ import ProductDropdown from "../SelectMenu/Prodropdown";
 import ServiceDropdown from "../SelectMenu/Serdropdown";
 import Nav from "../vertical/Nav";
 import { Drawer } from "antd";
+import TrainingDropdown from "../SelectMenu/Serdropdown";
 
 const HeaderPage = () => {
   const [proDropdown, setProdropdown] = useState(false);
   const [serDropdown, setSerdropdown] = useState(false);
+  const [trainingDropdown, setTrainingDropdown] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,6 +42,14 @@ const HeaderPage = () => {
 
   const onMouseSerLeave = () => {
     setSerdropdown(false);
+  };
+
+  const onMouseTrainingEnter = () => {
+    setTrainingDropdown(true);
+  };
+
+  const onMouseTrainingLeave = () => {
+    setTrainingDropdown(false);
   };
 
   const shownav = (e) => {
@@ -101,24 +111,16 @@ const HeaderPage = () => {
               SERVICES
             </Link>
             {serDropdown && <ServiceDropdown />}
-            {/* <div className="drop_down_cont" id="drops1">
-                        <ul>
-                        <li><Link to="/CustomizedPage">Customized Web</Link></li>
-                        <li><Link to="/WebsiteDesignPage">Website Design And Development</Link></li>
-                        <li><Link to="/WebHostingPage">Web Hosting</Link></li>
-                        <li><Link to="/AndroidPage">Android Application Development</Link></li>
-                        <li><Link to="/IOSPage">IOS Application Development</Link></li>
-                        <li><Link to="/BulkPage">Bulk SMS</Link></li>
-                        <li><Link to="/CRMPage">CRM</Link></li>
-                        <li><Link to="/ERPPage">ERP</Link></li>
-                        <li><Link to="/HRMPage">HRM</Link></li>
-                    </ul>
-                 </div> */}
           </div>
-          <div className="nav_content_list">
+          <div
+            className="nav_content_list1"
+            onMouseEnter={onMouseTrainingEnter}
+            onMouseLeave={onMouseTrainingLeave}
+          >
             <Link to="/TrainingPage" className="list_ref">
               TRAINING
             </Link>
+            {trainingDropdown && <TrainingDropdown />}
           </div>
           <div className="nav_content_list">
             <Link to="/AboutPage" className="list_ref">
